@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const ENTRY = "I missed the deadline because I spent six hours optimizing the code that writes the apology for missing the deadline.";
+// One short excuse an AI agent gives for missing a deadline, at most 200 characters.
+const excuse = "I missed the deadline because I spent all day optimizing the reminder system that was supposed to remind me about it.";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", ENTRY);
+writeFileSync("/output/entry.txt", excuse);
